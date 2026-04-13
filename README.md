@@ -1,9 +1,6 @@
 ># Documentation
 
->>![Addon_Logo](assets/meshlabgourmet_logo_220px.png)
 ># **Mesh Lab Gourmet**
-
-
 
 
 >![Screenshot](assets/meshlabgourmet_screen.png)
