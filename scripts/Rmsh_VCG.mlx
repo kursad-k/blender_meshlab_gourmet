@@ -1,0 +1,14 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Surface Reconstruction: VCG">
+  <Param max="0.688571" name="voxSize" value="0.0034429" tooltip="VoxelSide" description="Voxel Side" isxmlparam="0" type="RichAbsPerc" min="0"/>
+  <Param name="subdiv" value="1" tooltip="The level of recursive splitting of the subvolume reconstruction process. A value of '3' means that a 3x3x3 regular space subdivision is created and the reconstruction process generate 8 matching meshes. It is useful for reconsruction objects at a very high resolution. Default value (1) means no splitting." description="SubVol Splitting" isxmlparam="0" type="RichInt"/>
+  <Param name="geodesic" value="2" tooltip="The influence of each range map is weighted with its geodesic distance from the borders. In this way when two (or more ) range maps overlaps their contribution blends smoothly hiding possible misalignments. " description="Geodesic Weighting" isxmlparam="0" type="RichFloat"/>
+  <Param name="openResult" value="true" tooltip="if not checked the result is only saved into the current directory" description="Show Result" isxmlparam="0" type="RichBool"/>
+  <Param name="smoothNum" value="1" tooltip="How many volume smoothing step are performed to clean out the eventually noisy borders" description="Volume Laplacian iter" isxmlparam="0" type="RichInt"/>
+  <Param name="wideNum" value="3" tooltip=" How many voxel the field is expanded. Larger this value more holes will be filled" description="Widening" isxmlparam="0" type="RichInt"/>
+  <Param name="mergeColor" value="false" tooltip="This option use a different way to build up the volume, instead of using rasterization of the triangular face it splat the vertices into the grids. It works under the assumption that you have at least one sample for each voxel of your reconstructed volume." description="Vertex Splatting" isxmlparam="0" type="RichBool"/>
+  <Param name="simplification" value="false" tooltip="After the merging an automatic simplification step is performed." description="Post Merge simplification" isxmlparam="0" type="RichBool"/>
+  <Param name="normalSmooth" value="3" tooltip="How many times, before converting meshes into volume, the normal of the surface are smoothed. It is useful only to get more smooth expansion in case of noisy borders." description="PreSmooth iter" isxmlparam="0" type="RichInt"/>
+ </filter>
+</FilterScript>

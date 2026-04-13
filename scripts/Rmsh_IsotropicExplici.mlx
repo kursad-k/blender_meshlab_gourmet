@@ -1,0 +1,15 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Remeshing: Isotropic Explicit Remeshing">
+  <Param isxmlparam="0" name="Iterations" tooltip="Number of iterations of the remeshing operations to repeat on the mesh." type="RichInt" description="Iterations" value="3"/>
+  <Param isxmlparam="0" name="Adaptive" tooltip="Toggles adaptive isotropic remeshing." type="RichBool" description="Adaptive remeshing" value="false"/>
+  <Param isxmlparam="0" name="SelectedOnly" tooltip="If checked the remeshing operations will be applyed only to the selected faces." type="RichBool" description="Remesh only selected faces" value="false"/>
+  <Param isxmlparam="0" name="TargetLen" max="1.4641" tooltip="Sets the target length for the remeshed mesh edges." type="RichAbsPerc" min="0" description="Target Length" value="0.034641"/>
+  <Param isxmlparam="0" name="FeatureDeg" tooltip="" type="RichFloat" description="Minimum angle between faces to consider the shared edge as a feature to be preserved." value="30"/>
+  <Param isxmlparam="0" name="SplitFlag" tooltip="If checked the remeshing operations will include a refine step." type="RichBool" description="Refine Step" value="true"/>
+  <Param isxmlparam="0" name="CollapseFlag" tooltip="If checked the remeshing operations will include a collapse step." type="RichBool" description="Collapse Step" value="true"/>
+  <Param isxmlparam="0" name="SwapFlag" tooltip="If checked the remeshing operations will include a edge-swap step, aimed at improving the vertex valence of the resulting mesh." type="RichBool" description="Edge-Swap Step" value="true"/>
+  <Param isxmlparam="0" name="SmoothFlag" tooltip="If checked the remeshing operations will include a smoothing step, aimed at relaxing the vertex positions in a Laplacian sense." type="RichBool" description="Smooth Step" value="true"/>
+  <Param isxmlparam="0" name="ReprojectFlag" tooltip="If checked the remeshing operations will include a step to reproject the mesh vertices on the original surface." type="RichBool" description="Reproject Step" value="true"/>
+ </filter>
+</FilterScript>

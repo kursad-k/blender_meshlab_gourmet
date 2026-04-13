@@ -1,0 +1,7 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Mesh Element Sampling">
+  <Param enum_val2="Face" enum_val1="Edge" enum_cardinality="3" description="Element to sample:" tooltip="Choose what mesh element has to be used for the subsampling. At most one point sample will be added for each one of the chosen elements" type="RichEnum" isxmlparam="0" value="0" enum_val0="Vertex" name="Sampling"/>
+  <Param description="Number of samples" tooltip="The desired number of elements that must be chosen. Being a subsampling of the original elements if this number should not be larger than the number of elements of the original mesh." type="RichInt" isxmlparam="0" value="10000" name="SampleNum"/>
+ </filter>
+</FilterScript>

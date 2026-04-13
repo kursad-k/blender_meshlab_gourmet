@@ -1,0 +1,28 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+    
+  <filter name="Remove Duplicate Vertices"/>
+ <filter name="Remove Isolated pieces (wrt Diameter)">
+  <Param isxmlparam="0" tooltip="Delete all the connected components (floating pieces) with a diameter smaller than the specified one" value="0.495049" min="0" type="RichAbsPerc" max="4.95049" name="MinComponentDiag" description="Enter max diameter of isolated pieces"/>
+  <Param isxmlparam="0" tooltip="if true, the unreferenced vertices remaining after the face deletion are removed." value="true" type="RichBool" name="removeUnref" description="Remove unfreferenced vertices"/>
+ </filter>
+ <filter name="Remove Unreferenced Vertices"/>
+ <filter name="Remove Vertices wrt Quality">
+  <Param isxmlparam="0" tooltip="" value="0" min="0" type="RichAbsPerc" max="0" name="MaxQualityThr" description="Delete all vertices with quality under:"/>
+ </filter>
+
+  
+    
+<xmlfilter name="Surface Reconstruction: Screened Poisson">
+  <xmlparam name="cgDepth" value="1"/>
+  <xmlparam name="confidence" value="false"/>
+  <xmlparam name="depth" value="7"/>
+  <xmlparam name="fullDepth" value="5"/>
+  <xmlparam name="iters" value="8"/>
+  <xmlparam name="pointWeight" value="4"/>
+  <xmlparam name="preClean" value="false"/>
+  <xmlparam name="samplesPerNode" value="1.5"/>
+  <xmlparam name="scale" value="1.0"/>
+  <xmlparam name="visibleLayer" value="false"/>
+ </xmlfilter>
+</FilterScript>

@@ -1,0 +1,4 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <xmlfilter name="Compute Geometric Measures" description="Check the terminal for the results" />
+</FilterScript>

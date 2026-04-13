@@ -1,0 +1,4 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Tri to Quad by 4-8 Subdivision"/>
+</FilterScript>

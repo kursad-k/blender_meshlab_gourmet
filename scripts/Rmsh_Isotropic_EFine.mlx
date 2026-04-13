@@ -1,0 +1,25 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Remove Duplicate Vertices"/>
+ <filter name="Remove Isolated pieces (wrt Diameter)">
+  <Param isxmlparam="0" tooltip="Delete all the connected components (floating pieces) with a diameter smaller than the specified one" value="0.495049" min="0" type="RichAbsPerc" max="4.95049" name="MinComponentDiag" description="Enter max diameter of isolated pieces"/>
+  <Param isxmlparam="0" tooltip="if true, the unreferenced vertices remaining after the face deletion are removed." value="true" type="RichBool" name="removeUnref" description="Remove unfreferenced vertices"/>
+ </filter>
+ <filter name="Remove Unreferenced Vertices"/>
+ <filter name="Remove Vertices wrt Quality">
+  <Param isxmlparam="0" tooltip="" value="0" min="0" type="RichAbsPerc" max="0" name="MaxQualityThr" description="Delete all vertices with quality under:"/>
+ </filter>
+ <filter name="Repair non Manifold Edges by removing faces"/>
+ <filter name="Remeshing: Isotropic Explicit Remeshing">
+  <Param isxmlparam="0" tooltip="Number of iterations of the remeshing operations to repeat on the mesh." value="4" type="RichInt" name="Iterations" description="Iterations"/>
+  <Param isxmlparam="0" tooltip="Toggles adaptive isotropic remeshing." value="false" type="RichBool" name="Adaptive" description="Adaptive remeshing"/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will be applyed only to the selected faces." value="false" type="RichBool" name="SelectedOnly" description="Remesh only selected faces"/>
+  <Param isxmlparam="0" tooltip="Sets the target length for the remeshed mesh edges." value="0.001505" min="0" type="RichAbsPerc" max="8.95049" name="TargetLen" description="Target Length"/>
+  <Param isxmlparam="0" tooltip="" value="30" type="RichFloat" name="FeatureDeg" description="Minimum angle between faces to consider the shared edge as a feature to be preserved."/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will include a refine step." value="true" type="RichBool" name="SplitFlag" description="Refine Step"/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will include a collapse step." value="true" type="RichBool" name="CollapseFlag" description="Collapse Step"/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will include a edge-swap step, aimed at improving the vertex valence of the resulting mesh." value="true" type="RichBool" name="SwapFlag" description="Edge-Swap Step"/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will include a smoothing step, aimed at relaxing the vertex positions in a Laplacian sense." value="true" type="RichBool" name="SmoothFlag" description="Smooth Step"/>
+  <Param isxmlparam="0" tooltip="If checked the remeshing operations will include a step to reproject the mesh vertices on the original surface." value="true" type="RichBool" name="ReprojectFlag" description="Reproject Step"/>
+ </filter>
+</FilterScript>

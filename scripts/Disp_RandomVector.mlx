@@ -1,0 +1,7 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Random vertex displacement">
+  <Param value="true" name="UpdateNormals" tooltip="Toggle the recomputation of the normals after the random displacement.&#xa;&#xa;If disabled the face normals will remains unchanged resulting in a visually pleasant effect." type="RichBool" isxmlparam="0" description="Recompute normals"/>
+  <Param value="0.01" name="Displacement" tooltip="The vertex are displaced of a vector whose norm is bounded by this value" type="RichAbsPerc" isxmlparam="0" description="Max displacement" max="1.75747" min="0"/>
+ </filter>
+</FilterScript>

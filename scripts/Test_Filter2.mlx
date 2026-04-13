@@ -1,0 +1,15 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Remeshing: Isotropic Explicit Remeshing">
+  <Param value="3" tooltip="Number of iterations of the remeshing operations to repeat on the mesh." type="RichInt" description="Iterations" isxmlparam="0" name="Iterations"/>
+  <Param value="false" tooltip="Toggles adaptive isotropic remeshing." type="RichBool" description="Adaptive remeshing" isxmlparam="0" name="Adaptive"/>
+  <Param value="false" tooltip="If checked the remeshing operations will be applyed only to the selected faces." type="RichBool" description="Remesh only selected faces" isxmlparam="0" name="SelectedOnly"/>
+  <Param value="0.0197754" tooltip="Sets the target length for the remeshed mesh edges." min="0" type="RichAbsPerc" max="3.77537" description="Target Length" isxmlparam="0" name="TargetLen"/>
+  <Param value="30" tooltip="" type="RichFloat" description="Minimum angle between faces to consider the shared edge as a feature to be preserved." isxmlparam="0" name="FeatureDeg"/>
+  <Param value="true" tooltip="If checked the remeshing operations will include a refine step." type="RichBool" description="Refine Step" isxmlparam="0" name="SplitFlag"/>
+  <Param value="true" tooltip="If checked the remeshing operations will include a collapse step." type="RichBool" description="Collapse Step" isxmlparam="0" name="CollapseFlag"/>
+  <Param value="true" tooltip="If checked the remeshing operations will include a edge-swap step, aimed at improving the vertex valence of the resulting mesh." type="RichBool" description="Edge-Swap Step" isxmlparam="0" name="SwapFlag"/>
+  <Param value="true" tooltip="If checked the remeshing operations will include a smoothing step, aimed at relaxing the vertex positions in a Laplacian sense." type="RichBool" description="Smooth Step" isxmlparam="0" name="SmoothFlag"/>
+  <Param value="true" tooltip="If checked the remeshing operations will include a step to reproject the mesh vertices on the original surface." type="RichBool" description="Reproject Step" isxmlparam="0" name="ReprojectFlag"/>
+ </filter>
+</FilterScript>
